@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form action="update" method="post">
+			<table>
+				<tr>
+					<td>
+						<label>用户姓名</label>
+					</td>
+					<td>
+						<input type="text" id="username" name="username" th:value="${user.username}" placeholder="请输入您的真实姓名"/>
+						<input type="hidden" id="userId" name="userId" th:value="${user.userId}"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>联系电话</label>
+					</td>
+					<td>
+						<input type="text" id="cellphone" name="cellphone" th:value="${user.cellphone}" placeholder="请输入您的联系电话"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>登录密码</label>
+					</td>
+					<td>
+						<input type="password" id="password" name="password" th:value="${user.password}" placeholder="请输入您的登录密码"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="submit">确认修改</button>
+					</td>
+					<td>
+						<a href="list">返回</a>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

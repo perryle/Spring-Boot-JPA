@@ -1,0 +1,15 @@
+### 配置服务启动端口号
+server:  port: 9999
+### 配置项目应用名
+spring:  application:    name: spring-jap
+### 配置JDBC连接信息
+  datasource:    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jpa_db?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: java
+### 配置JPA相关信息  jpa:    show-sql: true
+    open-in-view: true
+    hibernate:      ddl-auto: update
+### 配置themeleaf页面信息  thymeleaf:    cache: false
+    prefix: classpath:/view/
+    suffix: .html

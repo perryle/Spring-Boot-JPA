@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  			xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+  								http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>cn.ekgc</groupId>
+	<artifactId>spring-jpa</artifactId>
+	<version>1.0</version>
+	
+	<properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <maven.compiler.source>1.8</maven.compiler.source>
+	    <maven.compiler.target>1.8</maven.compiler.target>
+	    <spring-boot-druid.version>1.1.16</spring-boot-druid.version>
+	</properties>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.4.RELEASE</version>
+	</parent>
+	
+	<dependencies>
+		<!-- 添加Spring Boot依赖关系[BEGIN] -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- 添加Spring Boot依赖关系[END] -->
+		
+		<!-- 添加 Spring Boot Data JPA依赖关系[BEGIN]-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<!-- 添加 Spring Boot Data JPA依赖关系[END]-->
+		
+		<!-- 添加Mysql数据库连接驱动[BEGIN] -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<!-- 添加Mysql数据库连接驱动[END] -->
+		
+		<!-- 添加Spring Boot Druid 数据连接池驱动[BEGIN] -->
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>druid-spring-boot-starter</artifactId>
+		    <version>${spring-boot-druid.version}</version>
+		</dependency>
+		<!-- 添加Spring Boot Druid 数据连接池驱动[END] -->
+		
+		<!-- 添加Thymeleaf作为前端模板工具[BEGIN] -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!-- 添加Thymeleaf作为前端模板工具[END] -->
+		
+		<!-- 添加DEVTOOLS热部署依赖关系[BEGIN] -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+		<!-- 添加DEVTOOLS热部署依赖关系[END] -->
+	    <dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <scope>test</scope>
+	    </dependency>
+	</dependencies>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+				    <artifactId>maven-clean-plugin</artifactId>
+				    <version>3.1.0</version>
+				</plugin>
+				<plugin>
+				    <artifactId>maven-resources-plugin</artifactId>
+				    <version>3.0.2</version>
+				</plugin>
+				<plugin>
+				    <artifactId>maven-compiler-plugin</artifactId>
+				    <version>3.8.0</version>
+				</plugin>
+				<plugin>
+				    <artifactId>maven-surefire-plugin</artifactId>
+				    <version>2.22.1</version>
+				</plugin>
+				<plugin>
+				    <artifactId>maven-jar-plugin</artifactId>
+				    <version>3.0.2</version>
+				</plugin>
+				<plugin>
+				    <artifactId>maven-install-plugin</artifactId>
+				    <version>2.5.2</version>
+				</plugin>
+				<plugin>
+				    <artifactId>maven-deploy-plugin</artifactId>
+				    <version>2.8.2</version>
+				</plugin>
+				<plugin>
+				    <artifactId>maven-site-plugin</artifactId>
+				    <version>3.7.1</version>
+				</plugin>
+				<plugin>
+				    <artifactId>maven-project-info-reports-plugin</artifactId>
+				    <version>3.0.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

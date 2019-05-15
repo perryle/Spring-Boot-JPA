@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-jpa
+Implementation-Version: 1.0
+Built-By: Administrator
+Implementation-Vendor-Id: cn.ekgc
+Build-Jdk: 1.8.0_202
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/spring-jpa
+Created-By: Maven Integration for Eclipse
+
